@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #faf3f2;
+  background: #0a1928;
 }
 
 body > div {
@@ -21,4 +21,15 @@ body > div {
   width: 90%;
   justify-content: center;
   flex-direction: column;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
