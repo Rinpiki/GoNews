@@ -8,9 +8,11 @@ function Filter() {
     setOption(!option);
   }
 
-  function send(e: any) {
+  const send = (e: any) => {
     e.preventDefault();
-  }
+    const dados = e.target.value;
+    console.log(dados);
+  };
 
   return (
     <header className="flex space-x-4 mx-auto mt-20 items-center font-semibold justify-between max-w-3xl">
@@ -22,25 +24,25 @@ function Filter() {
         Trocar
       </button>
       {option ? (
-        <form className="text-[#62ADF8] flex items-center animate-slide ">
-          <label>
-            Pesquisa:
-            <input
-              type="text"
-              className="ml-2 text-[#62ADF8] px-3 rounded-sm border-[#62ADF8] outline-none bg-[#0A1928] border-b-2"
-            />
-          </label>
-          <button
+        <form
+          onChange={send}
+          className="text-[#62ADF8] flex items-center animate-slide "
+        >
+          <input
+            type="text"
+            placeholder="pesquisar"
+            name="pesquisa"
+            className="ml-2 text-[#62ADF8] px-3 rounded-sm border-[#62ADF8] outline-none bg-[#0A1928] border-b-2"
+          />
+          <input
             type="submit"
-            onClick={send}
             className="text-sm hidden sm:flex bg-[#132F4C] rounded-md py-1 px-4 text-[#62ADF8] ml-3 hover:scale-105 transition delay-100 duration-300 ease-in-out"
-          >
-            Enviar
-          </button>
+          />
         </form>
       ) : (
         <div className="flex text-[#90CAF9] space-x-4 animate-slide">
           <select
+            onChange={send}
             name="categoria"
             id="cars"
             className="border-none outline-none rounded-sm text-[#7db0da] pl-2 bg-[#132F4C]"
