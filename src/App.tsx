@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import './App.css';
 import './index.css';
 import React from 'react';
@@ -7,11 +8,11 @@ import News from './components/News';
 
 function App() {
   return (
-    <div>
+    <>
       <Title />
       <Filter />
       <News />
-    </div>
+    </>
   );
 }
 
