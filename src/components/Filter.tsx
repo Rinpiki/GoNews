@@ -7,6 +7,7 @@ function Filter() {
   const [option, setOption] = React.useState(false);
   const [input, setInput] = React.useState('');
   const [select, setSelect] = React.useState('economia');
+  const [ponte, setPonte] = React.useState('');
 
   useEffect(() => {
     console.log(select);
@@ -20,6 +21,7 @@ function Filter() {
   const click = (e: any) => {
     e.preventDefault();
     console.log(input);
+    setPonte(input);
   };
 
   return (
@@ -33,7 +35,7 @@ function Filter() {
         select={select}
         setSelect={setSelect}
       />
-      <News input={input} select={select} />
+      <News input={ponte} select={select} />
     </>
   );
 }
