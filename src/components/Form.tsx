@@ -27,7 +27,9 @@ function Form({
           <input
             type="text"
             placeholder="pesquisar"
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => {
+              setInput(e.target.value);
+            }}
             value={input}
             name="pesquisa"
             className="ml-2 text-[#62ADF8] px-3 rounded-sm border-[#62ADF8] outline-none bg-[#0A1928] border-b-2"

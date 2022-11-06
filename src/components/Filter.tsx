@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useEffect } from 'react';
 import Form from './Form';
+import News from './News';
 
 function Filter() {
   const [option, setOption] = React.useState(false);
@@ -22,15 +23,18 @@ function Filter() {
   };
 
   return (
-    <Form
-      toggle={toggle}
-      option={option}
-      click={click}
-      input={input}
-      setInput={setInput}
-      select={select}
-      setSelect={setSelect}
-    />
+    <>
+      <Form
+        toggle={toggle}
+        option={option}
+        click={click}
+        input={input}
+        setInput={setInput}
+        select={select}
+        setSelect={setSelect}
+      />
+      <News input={input} select={select} />
+    </>
   );
 }
 

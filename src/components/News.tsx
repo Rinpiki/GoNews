@@ -1,8 +1,11 @@
 import React from 'react';
 
-function News(props) {
+function News({ input, select }: any) {
   return (
-    <section className="w-11/12 h-[550px] mx-auto mt-20 mb-10">OI</section>
+    <section className="w-11/12 h-[550px] border mx-auto mt-20 mb-10 text-[white]">
+      <h1>{input}</h1>
+      <h2>{select}</h2>
+    </section>
   );
 }
 
