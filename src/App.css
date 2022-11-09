@@ -23,6 +23,14 @@ body > div {
   flex-direction: column;
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 11px;
+}
+
 @keyframes slide {
   from {
     opacity: 0;

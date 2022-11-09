@@ -6,7 +6,7 @@ import News from './News';
 function Filter() {
   const [option, setOption] = React.useState(false);
   const [input, setInput] = React.useState('');
-  const [select, setSelect] = React.useState('economia');
+  const [select, setSelect] = React.useState('business');
   const [ponte, setPonte] = React.useState('');
 
   useEffect(() => {
