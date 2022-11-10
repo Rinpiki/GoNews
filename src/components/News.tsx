@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
+import noimg from '../img/noimg.png';
 
 function News({ input, select }: any) {
   let appp: any = [1, 2];
@@ -16,18 +17,6 @@ function News({ input, select }: any) {
       console.log(ibge.articles);
       appp = ibge.articles;
       setApii(ibge.articles);
-
-      const array = apii?.forEach((e: any) => {
-        console.log(e.title);
-        <div className="flex flex-col w-80 bg-[#303031] p-4 rounded-lg">
-          <img
-            src={e.urlToImage}
-            alt={e.title}
-            className=" rounded-lg mb-4 w-full h-auto"
-          />
-          <h2 className="mb-4">{e.title}</h2>
-        </div>;
-      });
     };
     api();
   }, [select]);
@@ -35,16 +24,22 @@ function News({ input, select }: any) {
   return (
     <section
       id="grid"
-      className="w-11/12 h-[550px] mx-auto mt-20 mb-10 text-[white] animate-slide transition delay-100 duration-300 ease-in-out"
+      className="w-11/12 h-[550px] mx-auto mt-20 mb-10  text-[white] animate-slide transition delay-100 duration-300 ease-in-out"
     >
-      {apii?.map((e: any) => (
-        <div className="flex flex-col w-80 bg-[#303031] p-4 rounded-lg animate-slide transition delay-100 duration-300 ease-in-out">
+      {apii?.map((e: any, i: any) => (
+        <div
+          key={i}
+          className="flex flex-col w-80  p-4 rounded-lg bg-[#132F4C] animate-slide transition delay-100 duration-300 ease-in-out"
+        >
           <img
-            src={e.urlToImage}
+            src={e.urlToImage?.length > 7 ? e.urlToImage : noimg}
             alt={e.title}
-            className=" rounded-lg mb-4 w-full h-32"
+            className=" rounded-lg mb-4 w-full h-32 bg-slate-400"
           />
-          <h2 className="mb-4">{e.title}</h2>
+          <a href={e.url} className="mb-4">
+            {e.title?.slice(0, 70)}
+            ...
+          </a>
         </div>
       ))}
     </section>
