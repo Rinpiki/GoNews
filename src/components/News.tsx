@@ -21,6 +21,22 @@ function News({ input, select }: any) {
     api();
   }, [select]);
 
+  useEffect(() => {
+    const sele = input;
+
+    const api = async () => {
+      const dados = await fetch(
+        `https://newsapi.org/v2/everything?q=${sele}&apiKey=8425dcd380824eeb99bbf40e8ccb3287`
+      );
+
+      const ibge = await dados.json();
+      console.log(ibge.articles);
+      appp = ibge.articles;
+      setApii(ibge.articles);
+    };
+    api();
+  }, [input]);
+
   return (
     <section
       id="grid"
