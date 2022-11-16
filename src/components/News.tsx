@@ -15,7 +15,6 @@ function News({ input, select }: any) {
       );
 
       const ibge = await dados.json();
-      console.log(ibge.articles);
       appp = ibge.articles;
       setApii(ibge.articles);
     };
@@ -32,7 +31,6 @@ function News({ input, select }: any) {
         );
 
         const ibge = await dados.json();
-        console.log(ibge.articles);
         appp = ibge.articles;
         setApii(ibge.articles);
       };

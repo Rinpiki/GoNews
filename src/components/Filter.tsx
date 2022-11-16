@@ -9,9 +9,7 @@ function Filter() {
   const [select, setSelect] = React.useState('business');
   const [ponte, setPonte] = React.useState('');
 
-  useEffect(() => {
-    console.log(select);
-  }, [select]);
+  useEffect(() => {}, [select]);
 
   const toggle = (e: any) => {
     e.preventDefault();
