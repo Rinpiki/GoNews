@@ -53,7 +53,8 @@ function News({ input, select }: any) {
           <img
             src={e.urlToImage?.length > 7 ? e.urlToImage : noimg}
             alt={e.title}
-            className=" rounded-lg mb-4 w-full h-32 bg-slate-400"
+            className=" rounded-lg mb-4 w-full h-32
+             bg-slate-400"
           />
           <a href={e.url} className="mb-4">
             {e.title?.slice(0, 72)}
