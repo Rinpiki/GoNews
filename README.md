@@ -15,6 +15,7 @@
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Typescript](https://developer.mozilla.org/pt-BR/docs/Web/Typescript)
 - [Prettier](https://prettier.io/)
 - [React](https://pt-br.reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
