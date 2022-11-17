@@ -1,5 +1,5 @@
 # GoNews
-![Screenshot_13](https://user-images.githubusercontent.com/74790193/195394165-a94a166a-2c71-490a-8418-bdf5ff4b7ad6.png)
+![Gonews](https://user-images.githubusercontent.com/74790193/202467546-31c33e9c-87e4-4692-966c-7d492fd22304.png)
 # 📖 Sobre o projeto
 <h3>O projeto foi elaborado usando o React, a intenção foi desenvolver um site onde você pode pesquisar por notícias</h3>
 
