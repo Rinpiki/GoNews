@@ -20,3 +20,33 @@
 - [Tailwind](https://tailwindcss.com/)
 - [Vite](https://vitejs.dev/)
 - [Eslint](https://eslint.org/)
+
+
+## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+### 📋 Pré-requisitos
+
+Você precisará do Node.js, git e do npm (ou yarn) para executar os comandos abaixo.
+
+### 🔧 Instalação
+
+Para instalar o projeto, execute os comandos abaixo:
+
+```sh
+# Clonando o repositório
+git clone https://github.com/Rinpiki/GoNews
+# Instalando dependências
+npm install
+# ou
+yarn
+```
+
+Para executar a aplicação com node
+
+```sh
+npm run dev
+# ou
+yarn npm run
+```
